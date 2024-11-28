@@ -1,6 +1,6 @@
 // src/data/skills.ts
 
-import { Project, ProjectCategory } from "@/types";
+import {ProjectCategory } from "@/types";
 
 export interface Skill {
     iconName: string;
