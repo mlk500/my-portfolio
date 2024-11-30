@@ -1,5 +1,5 @@
 import { Project } from '@/types/index';
-
+import { figmaEmbeds } from './figmaEmbeds';
 // export const categories: ProjectCategory[] = [
 //     'fullstack',
 //     'mobile',
@@ -75,22 +75,23 @@ export const projects: Project[] = [
         technologies: ["Python", "NLTK", "scikit-learn", "Machine Learning", "NLP", "Information Retrieval", "Text Classification"],
         githubLink: "https://github.com/mlk500/information-retrieval-project" 
      },
-    {
+     {
         id: "8",
-        title: "React Express Project 1",
-        description: "Fullstack web application using React and Express.",
+        title: "Code Online - Collaborative Platform",
+        description: "Built a LeetCode-inspired platform enabling real-time code mentoring, featuring synchronized editing, role-based access control, and interactive problem solving.\nNote: Due to free hosting, initial loading may take 30-60 seconds as the server spins up.",
         category: "Fullstack",
-        technologies: ["React", "Express", "Node.js", "JavaScript"],
-        githubLink: "", 
+        technologies: ["React", "Express", "Next.js", "TypeScript", "WebSocket", "Real-time Collaboration"],
+        githubLink: "https://github.com/mlk500/code-online",
+        demoLink: "https://online-coding-frontend.onrender.com/" 
     },
-    {
-        id: "9",
-        title: "React Express Project 2",
-        description: "Second fullstack web application using React and Express.",
-        category: "Fullstack",
-        technologies: ["React", "Express", "Node.js", "JavaScript"],
-        githubLink: "", // Add your GitHub link
-    },
+    // {
+    //     id: "9",
+    //     title: "React Express Project 2",
+    //     description: "Second fullstack web application using React and Express.",
+    //     category: "Fullstack",
+    //     technologies: ["React", "Express", "Node.js", "JavaScript"],
+    //     githubLink: "", // Add your GitHub link
+    // },
     {
         id: "10",
         title: "JavaFX Application",
@@ -114,23 +115,24 @@ export const projects: Project[] = [
         description: "Second mobile application for Android platform.",
         category: "Mobile",
         technologies: ["Java", "Android SDK", "Mobile Development"],
-        githubLink: "", // Add your GitHub link
+        githubLink: "",
     },
     {
         id: "13",
         title: "iOS Learning Projects",
         description: "Collection of iOS applications built while learning Swift.",
         category: "Mobile",
-        technologies: ["Swift", "iOS Development", "UIKit"],
-        githubLink: "", // Add your GitHub link
+        technologies: ["Swift", "iOS Development", "SwiftUI"],
+        githubLink: "https://github.com/mlk500/ios-learning-journey",
     },
     {
         id: "14",
-        title: "Figma Design Projects",
-        description: "Collection of UI/UX design projects created in Figma.",
+        title: "Kids Watch",
+        description: "Collection of UI/UX design projects created in Figma.", //fix later
         category: "UI/UX",
         technologies: ["Figma", "UI Design", "UX Design", "Prototyping"],
-        githubLink: "", // Add your GitHub link
+        figmaEmbedCode: figmaEmbeds.get("Kids Watch"),
+        figmaLink: "https://www.figma.com/design/nWAufWRu4jNoLreD7qsOQ1/Kids-Watcch---HCI-Project?node-id=0-1&t=FBJPEhXcS4M7y10k-1"
     },
     {
         id: "15",
@@ -148,5 +150,24 @@ export const projects: Project[] = [
         category: "ML/DS/DL",
         technologies: ["Python", "NumPy", "OCR", "Classical ML Algorithms"],
         githubLink: "https://github.com/mlk500/OCR_NaiveBayes_Perceptron" 
-     }
+     },
+     {
+        id: "17",
+        title: "Final Project - Player UI",
+        description: "Collection of UI/UX design projects created in Figma.", 
+        category: "UI/UX",
+        technologies: ["Figma", "UI Design", "UX Design", "Prototyping"],
+        figmaEmbedCode: figmaEmbeds.get("Player UI - Project"),
+        figmaLink: "https://www.figma.com/design/FzK1X6tGvlFHaI9Ndb4KEC/Final-Project---Player-UI?node-id=1-23538&t=XuBnCUcZT2YF2E8f-1"
+    },
+    {
+        id: "18",
+        title: "Knight's Move",
+        description: "Collection of UI/UX design projects created in Figma.", 
+        category: "UI/UX",
+        technologies: ["Figma", "UI Design", "UX Design", "Prototyping"],
+        figmaEmbedCode: figmaEmbeds.get("Knight's move"),
+        figmaLink: "https://www.figma.com/design/EzLXFFjPbTqsHGpMs54Izv/Knight's-move?node-id=0-1&t=E7CYDZNwH7e9enY1-1"
+    },
+    
 ]

@@ -1,4 +1,3 @@
-// src/components/Portfolio/Projects/index.tsx
 import { FC } from "react";
 import SectionTitle from "../common";
 import ProjectCard from "./ProjectCard";
@@ -8,7 +7,7 @@ import { useCategory } from "../context/CategoryContext";
 
 const Projects: FC = () => {
     const categories: ProjectCategory[] = ['Fullstack', 'Mobile', 'ML/DS/DL', 'UI/UX'];
-    const { selectedCategory, setSelectedCategory } = useCategory();  // Get both from context
+    const { selectedCategory, setSelectedCategory } = useCategory();
 
     const filteredProjects = selectedCategory
         ? projects.filter(p => p.category === selectedCategory)
