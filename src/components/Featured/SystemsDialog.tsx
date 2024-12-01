@@ -76,7 +76,7 @@ const SystemsDialog: FC<SystemsDialogProps> = ({ open, onOpenChange, systems }) 
                         </div>
                         <div className="mt-4 sm:mt-6 flex justify-center">
                             <img
-                                src="dist/systems-diagram.png"
+                                src="/systems-diagram.png"
                                 alt="System Architecture Diagram"
                                 className="rounded-lg shadow-lg w-full md:w-2/3 lg:w-1/2 h-auto object-contain"
                             />
