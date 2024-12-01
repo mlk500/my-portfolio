@@ -1,5 +1,3 @@
-// src/data/skills.ts
-
 import {ProjectCategory } from "@/types";
 
 export interface Skill {

@@ -11,11 +11,8 @@ const ProjectCard: FC<Project> = (project) => {
 
     return (
         <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-6">
-            {/* Title and Description */}
             <h3 className="text-xl font-semibold mb-2">{title}</h3>
             <p className="text-gray-600 mb-4 whitespace-pre-line">{description}</p>
-
-            {/* Technologies tags */}
             <div className="flex flex-wrap gap-2 mb-4">
                 {technologies.map((tech, index) => (
                     <span
@@ -27,7 +24,6 @@ const ProjectCard: FC<Project> = (project) => {
                 ))}
             </div>
 
-            {/* Conditional rendering for Figma projects vs regular projects */}
             {isFigmaProject(project) ? (
                 <>
                     <div className="relative w-full pt-[56.25%] mt-4">

@@ -18,7 +18,6 @@ const Projects: FC = () => {
         <section id="projects" className="py-20 px-6 bg-gray-50">
             <div className="max-w-5xl mx-auto">
                 <SectionTitle>Projects</SectionTitle>
-                {/* Project filters */}
                 <div className="flex gap-4 mb-8">
                     <button
                         onClick={() => setSelectedCategory(null)}
@@ -36,7 +35,6 @@ const Projects: FC = () => {
                         </button>
                     ))}
                 </div>
-                {/* Project grid */}
                 <div className="grid md:grid-cols-2 gap-6">
                     {filteredProjects.map(project => (
                         <ProjectCard key={project.id} {...project} />

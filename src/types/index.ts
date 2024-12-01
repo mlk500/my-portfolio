@@ -17,7 +17,6 @@
 //     demoLink?: string;
 //   }
 
-  // types/index.ts
 export interface Certification {
   title: string;
   issuer: string;
@@ -45,10 +44,8 @@ export interface NavigationProps {
 //     image?: string;
 // }
 
-// Update ProjectCategory to include Design
 export type ProjectCategory = 'Fullstack' | 'Mobile' | 'ML/DS/DL' | 'UI/UX' | 'Design';
 
-// Create a base project interface
 export interface BaseProject {
     id: string;
     title: string;
@@ -57,7 +54,6 @@ export interface BaseProject {
     technologies: string[];
 }
 
-// Regular project interface
 export interface StandardProject extends BaseProject {
     category: Exclude<ProjectCategory, 'Design'>;
     githubLink?: string;
@@ -65,12 +61,10 @@ export interface StandardProject extends BaseProject {
     image?: string;
 }
 
-// Figma project interface
 export interface FigmaProject extends BaseProject {
     category: 'Design' | 'UI/UX';
     figmaEmbedCode: string;
     figmaLink?: string;
 }
 
-// Union type for all projects
 export type Project = StandardProject | FigmaProject;

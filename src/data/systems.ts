@@ -50,7 +50,6 @@ export interface SystemDetails {
     {
         title: "Admin Interface", 
         description: "A web-based admin platform where hospital staff create and manage therapeutic games, with multi-level authorization for different departments",
-        myRole: "Led backend development and contributed to frontend implementation",
         technologies: ["React", "TypeScript"],
         features: [
             "Game creation system with units, locations, and tasks",
@@ -63,7 +62,6 @@ export interface SystemDetails {
     {
         title: "Backend System",
         description: "Server handling game logic, user management, and data storage, with secure authentication and cloud infrastructure",
-        myRole: "Designed and implemented core backend architecture",
         technologies: ["Java", "Spring Boot", "MySQL", "GCP"],
         features: [
             "Secure authentication and authorization",
@@ -77,7 +75,6 @@ export interface SystemDetails {
     {
         title: "Object Recognition Service",
         description: "AI service for processing and recognizing game objects in real-time",
-        myRole: "Implemented model training and deployment pipeline",
         technologies: ["TensorFlow", "FastAPI", "GCP"],
         features: [
             "MobileNetV2 model with transfer learning",
@@ -90,7 +87,6 @@ export interface SystemDetails {
     {
         title: "Mobile Web Player",
         description: "Flutter-based web application for children to play the therapeutic games",
-        myRole: "Contributed to backend integrations",
         technologies: ["Flutter", "Dart", "Web"],
         features: [
             "QR code scanning",

@@ -1,4 +1,3 @@
-// src/context/CategoryContext.tsx
 import React, { createContext, useContext, useState } from 'react';
 import { ProjectCategory } from '@/types';
 

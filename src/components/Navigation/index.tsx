@@ -15,7 +15,6 @@ const Navigation: React.FC<NavigationProps> = ({ onCertificationsClick }) => {
                 <div className="flex justify-between items-center">
                     <span className="text-xl font-bold">Malak Yehia</span>
 
-                    {/* Mobile Menu Button */}
                     <button
                         className="md:hidden"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -23,7 +22,6 @@ const Navigation: React.FC<NavigationProps> = ({ onCertificationsClick }) => {
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
 
-                    {/* Desktop Navigation */}
                     <div className="hidden md:flex gap-6 items-center">
                         <a href="#about" className="text-gray-600 hover:text-primary">About</a>
                         <a href="#featured" className="text-gray-600 hover:text-primary">Featured Project</a>
@@ -37,8 +35,6 @@ const Navigation: React.FC<NavigationProps> = ({ onCertificationsClick }) => {
                         </Button>
                     </div>
                 </div>
-
-                {/* Mobile Navigation */}
                 {isMenuOpen && (
                     <div className="md:hidden pt-4 pb-2">
                         <div className="flex flex-col gap-4 items-center">
