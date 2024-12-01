@@ -21,13 +21,10 @@ const CertificationsModal: FC<ModalProps> = ({ onClose, certifications }) => (
                 </Button>
             </div>
 
-            {/* Certifications list container */}
             <div className="space-y-8">
                 {certifications.map((cert, index) => (
                     <div key={index} className="border-b pb-8">
-                        {/* Flexible layout for certification content */}
                         <div className="flex flex-col md:flex-row gap-6">
-                            {/* Optional certificate image */}
                             {cert.imageSrc && (
                                 <div className="md:w-1/3">
                                     <img
@@ -37,14 +34,12 @@ const CertificationsModal: FC<ModalProps> = ({ onClose, certifications }) => (
                                     />
                                 </div>
                             )}
-                            {/* Certificate details section */}
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2">{cert.title}</h4>
                                 <p className="text-gray-600 mb-2">
                                     {cert.issuer} • {cert.date}
                                 </p>
                                 <p className="text-gray-600 mb-4">{cert.description}</p>
-                                {/* Skills tags section */}
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {cert.skills.map((skill, idx) => (
                                         <span
@@ -55,7 +50,6 @@ const CertificationsModal: FC<ModalProps> = ({ onClose, certifications }) => (
                                         </span>
                                     ))}
                                 </div>
-                                {/* Conditional rendering of certificate link */}
                                 {cert.link && (
                                     <a
                                         href={cert.link}

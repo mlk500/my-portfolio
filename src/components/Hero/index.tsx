@@ -1,4 +1,4 @@
-import { Github, LinkedinIcon, Mail, Download, ChevronRight } from 'lucide-react';
+import { Github, LinkedinIcon, Mail, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
     return (

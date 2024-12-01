@@ -21,7 +21,7 @@ export const certifications: Certification[] = [
         title: "Android Development Bootcamp",
         issuer: "John Bryce & Tsofen",
         date: "2022",
-        imageSrc: "/android-cert.jpeg",
+        imageSrc: "dist/android-cert.jpeg",
         description: "Intensive bootcamp covering Android development fundamentals",
         skills: ["Android", "Java", "Spring Boot", "MySQL", "Heroku"]
     }
