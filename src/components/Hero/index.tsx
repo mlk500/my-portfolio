@@ -13,13 +13,13 @@ const Hero = () => {
                         Junior Developer passionate about creating impactful solutions across web, mobile, and data science
                     </p>
                     <div className="flex gap-4">
-                        <a
+                        {/* <a
                             href="/resume.pdf"
                             download
                             className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-700"
                         >
                             <Download className="w-5 h-5" /> Download CV
-                        </a>
+                        </a> */}
                         <a
                             href="#featured"
                             className="flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary-50"

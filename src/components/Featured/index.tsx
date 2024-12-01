@@ -1,20 +1,20 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import SectionTitle from '../common/';
+import SystemsDialog from './SystemsDialog';
+import { systems } from '@/data/systems';
 
-// Define an array of technologies used in the project
 const technologies = [
-    "Spring Boot", "React", "TypeScript", "GCP", "MySQL",
-    "TensorFlow", "Redux", "GitHub Actions", "Cloud Run"
+    "Spring Boot", "React", "GCP", "MySQL",
+    "TensorFlow", "FastAPI", "Flutter", "GitHub Actions", "Cloud Run"
 ];
 
 const FeaturedProject: FC = () => {
+    const [showSystemDetails, setShowSystemDetails] = useState(false);
     return (
         <section id="featured" className="py-20 px-6 bg-white">
             <div className="max-w-5xl mx-auto">
                 <SectionTitle>Featured Project</SectionTitle>
-                {/* Main project card container with hover effects */}
                 <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                    {/* Project header information */}
                     <span className="text-sm text-primary font-semibold mb-2 block">
                         Capstone Project
                     </span>
@@ -22,23 +22,29 @@ const FeaturedProject: FC = () => {
                         Find the Treasure
                     </h3>
                     <p className="text-gray-600 text-lg mb-8">
-                        A gamified cognitive and motor training system for children at Sheba Hospital,
-                        featuring an admin interface for games creation and a mobile web-based player app.
+                        "Find the Treasure" is a gamified cognitive and motor training system for children at Sheba Hospital.
+                        It transforms physical therapy into an engaging treasure hunt where children move around the hospital,
+                        scanning QR codes and identifying objects to solve therapeutic tasks.
+
+                        The system consists of two main applications: an admin dashboard where medical staff create customized
+                        therapeutic games, and a mobile web player app where children engage with these games. Each game is
+                        composed of units combining locations, objects, and therapeutic tasks, making physical therapy both
+                        interactive and measurable.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
-                        <div className="hover:bg-white rounded-lg p-4 transition-colors duration-300">
+                        <div className="hover:bg-white rounded-lg p-6"> {/* Increased padding */}
                             <h4 className="font-semibold mb-4 text-gray-800">Key Features</h4>
-                            <ul className="space-y-3">
+                            <ul className="space-y-4"> {/* Increased vertical spacing between items */}
                                 {[
-                                    "Spring Boot backend with secure authentication",
-                                    "React admin dashboard with TypeScript",
-                                    "TensorFlow-powered image recognition",
-                                    "GCP cloud infrastructure deployment"
+                                    "Medical staff create customized therapeutic games through an admin dashboard",
+                                    "Each game consists of units combining locations, objects, and therapeutic tasks",
+                                    "Children use the mobile web app to find locations using hints",
+                                    "Therapeutic tasks appear upon finding correct objects",
                                 ].map((feature, index) => (
-                                    <li key={index} className="flex items-start gap-2 group">
-                                        <div className="w-2 h-2 bg-primary rounded-full mt-2 group-hover:scale-125 transition-transform duration-300" />
-                                        <span className="text-gray-600 group-hover:text-primary transition-colors duration-300">
+                                    <li key={index} className="flex items-start gap-3"> {/* Increased gap between bullet and text */}
+                                        <div className="min-w-[8px] h-2 bg-primary rounded-full mt-2 group-hover:scale-125 transition-transform duration-300" />
+                                        <span className="text-gray-600 group-hover:text-primary transition-colors duration-300 flex-1"> {/* Added flex-1 to allow text wrapping */}
                                             {feature}
                                         </span>
                                     </li>
@@ -63,24 +69,28 @@ const FeaturedProject: FC = () => {
                         </div>
                     </div>
 
-                    {/* Action buttons with enhanced hover effects */}
-                    <div className="flex gap-4">
-                        <a
-                            href="#"
+                    <div className="centerflex gap-4">
+                        <button
+                            onClick={() => setShowSystemDetails(true)}
                             className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/100 transform hover:-translate-y-0.5 transition-all duration-300"
                         >
-                            View Project
-                        </a>
-                        <a
-                            href="#"
-                            className="px-6 py-3 border border-primary/100 text-primary rounded-lg hover:bg-primary-50 transform hover:-translate-y-0.5 transition-all duration-300"
-                        >
+                            View Systems
+                        </button>
+
+                        {/* <a href="your-github-link"
+                            className="px-6 py-3 border border-primary/100 text-primary rounded-lg hover:bg-primary-50 transform hover:-translate-y-0.5 transition-all duration-300">
                             GitHub Repository
-                        </a>
+                        </a> */}
                     </div>
+
+                    <SystemsDialog
+                        open={showSystemDetails}
+                        onOpenChange={setShowSystemDetails}
+                        systems={systems}
+                    />
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

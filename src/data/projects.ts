@@ -94,29 +94,28 @@ export const projects: Project[] = [
     // },
     {
         id: "10",
-        title: "JavaFX Application",
-        description: "Desktop application built with Java and JavaFX.",
-        category: "Fullstack",
-        technologies: ["Java", "JavaFX", "Desktop Development"],
-        githubLink: "", // Add your GitHub link
+        title: "CuraEats - Diabetic Meal Planning App",
+        description: "Built a production-level Android application for CuraLife enabling diabetics to manage and track personalized meal plans, featuring secure authentication and advanced search capabilities.",
+        category: "Mobile",
+        technologies: ["Java", "Android", "Spring Boot", "MySQL", "Heroku", "JWT"],
+        githubLink: "",
     },
     {
         id: "11",
+        title: "Knight's Move Game",
+        description: "An educational chess-inspired game where players control a knight piece while answering trivia questions and avoiding opponents, featuring multiple difficulty levels and special board mechanics.",
+        category: "Fullstack",
+        technologies: ["Java", "JavaFX", "JSON", "MVC Architecture", "Design Patterns"],
+        githubLink: "https://github.com/mlk500/Knight-Move-Game"
+     },
+    {
+        id: "12",
         title: "Full-Stack Notes App",
         description: "Built an Android notes app with Spring Boot backend, implementing CRUD operations, and priority-based note organization.",
         category: "Mobile",
-        technologies: ["Java", "Android", "Spring Boot", "MySQL", "REST API", "RecyclerView"],
+        technologies: ["Java", "Android", "Spring Boot", "MySQL", "REST API"],
         githubLink: "https://github.com/mlk500/NotesAppAndroid" 
      },
-
-    {
-        id: "12",
-        title: "Android Project 2",
-        description: "Second mobile application for Android platform.",
-        category: "Mobile",
-        technologies: ["Java", "Android SDK", "Mobile Development"],
-        githubLink: "",
-    },
     {
         id: "13",
         title: "iOS Learning Projects",
@@ -128,7 +127,8 @@ export const projects: Project[] = [
     {
         id: "14",
         title: "Kids Watch",
-        description: "Collection of UI/UX design projects created in Figma.", //fix later
+        description: "Designed a dual-interface booking platform for childcare services, featuring separate apps for\
+         parents to book and monitor nannies, and for nannies to manage their schedules and bookings.", 
         category: "UI/UX",
         technologies: ["Figma", "UI Design", "UX Design", "Prototyping"],
         figmaEmbedCode: figmaEmbeds.get("Kids Watch"),
@@ -154,7 +154,8 @@ export const projects: Project[] = [
      {
         id: "17",
         title: "Final Project - Player UI",
-        description: "Collection of UI/UX design projects created in Figma.", 
+        description: "Designed and prototyped the player interface as part of the capstone project, focusing on accessibility\
+         and engaging user experience for children.",
         category: "UI/UX",
         technologies: ["Figma", "UI Design", "UX Design", "Prototyping"],
         figmaEmbedCode: figmaEmbeds.get("Player UI - Project"),
@@ -162,12 +163,12 @@ export const projects: Project[] = [
     },
     {
         id: "18",
-        title: "Knight's Move",
-        description: "Collection of UI/UX design projects created in Figma.", 
+        title: "Knight's Move UI Design",
+        description: "Designed a comprehensive UI/UX prototype for an educational chess game, focusing on game mechanics visualization and intuitive user interactions.",
         category: "UI/UX",
         technologies: ["Figma", "UI Design", "UX Design", "Prototyping"],
         figmaEmbedCode: figmaEmbeds.get("Knight's move"),
         figmaLink: "https://www.figma.com/design/EzLXFFjPbTqsHGpMs54Izv/Knight's-move?node-id=0-1&t=E7CYDZNwH7e9enY1-1"
-    },
+     },
     
 ]
