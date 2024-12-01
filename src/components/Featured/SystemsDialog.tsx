@@ -2,6 +2,8 @@ import { FC } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ChevronRight, ExternalLink } from 'lucide-react';
 import { SystemDetails } from '@/data/systems';
+import diagram from '@/assets/systems-diagram.png'
+
 
 interface SystemsDialogProps {
     open: boolean;
@@ -76,7 +78,7 @@ const SystemsDialog: FC<SystemsDialogProps> = ({ open, onOpenChange, systems }) 
                         </div>
                         <div className="mt-4 sm:mt-6 flex justify-center">
                             <img
-                                src="/systems-diagram.png"
+                                src={diagram}
                                 alt="System Architecture Diagram"
                                 className="rounded-lg shadow-lg w-full md:w-2/3 lg:w-1/2 h-auto object-contain"
                             />
