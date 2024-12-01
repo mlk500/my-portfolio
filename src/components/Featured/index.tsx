@@ -33,25 +33,24 @@ const FeaturedProject: FC = () => {
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
-                        <div className="hover:bg-white rounded-lg p-6"> {/* Increased padding */}
+                        <div className="hover:bg-white rounded-lg p-6">
                             <h4 className="font-semibold mb-4 text-gray-800">Key Features</h4>
-                            <ul className="space-y-4"> {/* Increased vertical spacing between items */}
+                            <ul className="space-y-4">
                                 {[
                                     "Medical staff create customized therapeutic games through an admin dashboard",
                                     "Each game consists of units combining locations, objects, and therapeutic tasks",
                                     "Children use the mobile web app to find locations using hints",
                                     "Therapeutic tasks appear upon finding correct objects",
                                 ].map((feature, index) => (
-                                    <li key={index} className="flex items-start gap-3"> {/* Increased gap between bullet and text */}
+                                    <li key={index} className="flex items-start gap-3">
                                         <div className="min-w-[8px] h-2 bg-primary rounded-full mt-2 group-hover:scale-125 transition-transform duration-300" />
-                                        <span className="text-gray-600 group-hover:text-primary transition-colors duration-300 flex-1"> {/* Added flex-1 to allow text wrapping */}
+                                        <span className="text-gray-600 group-hover:text-primary transition-colors duration-300 flex-1">
                                             {feature}
                                         </span>
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        {/* Technologies Used column with interactive tags */}
                         <div className="hover:bg-white rounded-lg p-4 transition-colors duration-300">
                             <h4 className="font-semibold mb-4 text-gray-800">
                                 Technologies Used
