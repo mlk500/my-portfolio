@@ -57,7 +57,7 @@ export interface SystemDetails {
             "Secure authentication and role-based access control",
         ],
         githubLink: "",
-        demoLink: "https://admin-platform.onrender.com"
+        demoLink: "https://admin-portal-1-eyes.onrender.com/"
     },
     {
         title: "Backend System",
@@ -95,6 +95,6 @@ export interface SystemDetails {
             "Interactive UI design",
         ],
         githubLink: "",
-        demoLink: "https://treasure-hunt-player.web.app"
+        demoLink: "https://treasure-hunt-player-app.web.app"
     }
  ];
