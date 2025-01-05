@@ -4,6 +4,14 @@ export const certifications: Certification[] = [
     {
         title: "Deep Learning Specialization",
         issuer: "Coursera",
+        date: "2025",
+        link: "https://www.coursera.org/account/accomplishments/certificate/KEF46V53KUYC",
+        description: "Acquired foundational knowledge of generative AI and large language models, including transformers, fine-tuning, and reinforcement learning from human feedback (RLHF).",
+        skills: ["Generative AI", "Large Language Models", "Transformers", "Prompt Engineering", "Fine-Tuning", "RLHF", "Model Evaluation", "AWS Sagemaker"]
+    },
+    {
+        title: "Deep Learning Specialization",
+        issuer: "Coursera",
         date: "2024",
         link: "https://www.coursera.org/account/accomplishments/specialization/certificate/DBKD8QC5HX47",
         description: "Mastered neural networks (CNNs, RNNs, LSTMs, Transformers) using Python and TensorFlow, applying them to real-world cases like speech recognition and chatbots.",
