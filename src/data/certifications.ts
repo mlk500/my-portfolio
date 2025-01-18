@@ -2,7 +2,7 @@ import { Certification } from "@/types";
 
 export const certifications: Certification[] = [
     {
-        title: "Deep Learning Specialization",
+        title: "Generative AI with LLMs",
         issuer: "Coursera",
         date: "2025",
         link: "https://www.coursera.org/account/accomplishments/certificate/KEF46V53KUYC",
