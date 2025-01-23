@@ -1,4 +1,5 @@
 import { Github, LinkedinIcon, Mail, ChevronRight } from 'lucide-react';
+import me_ai from '@/assets/me_ai.jpeg'
 
 const Hero = () => {
     return (
@@ -31,7 +32,12 @@ const Hero = () => {
                 <div className="flex justify-center">
                     <div className="relative">
                         <div className="w-80 h-80 bg-primary/15 rounded-full flex items-center justify-center">
-                            <span className="text-6xl">👩🏻‍💻</span>
+                            {/* <span className="text-6xl">👩🏻‍💻</span> */}
+                            <img
+                                src={me_ai}
+                                alt="ME-AI"
+                                className="w-full h-full object-cover rounded-full"
+                            />
                         </div>
                         <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
                             <div className="flex gap-4">
